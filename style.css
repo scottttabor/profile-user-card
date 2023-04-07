@@ -16,7 +16,9 @@
 
 main {
     background-color: var(--main-bg);
-    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 40vw bottom 80vw, left 40vw top 60vw;
+    background-repeat: no-repeat, no-repeat;
 
 }
 
@@ -94,10 +96,66 @@ main {
     margin-top: .5rem;
 }
 
+/* Media Queries */
 
-@media screen and (min-width: 355px) {
+@media screen and (max-width: 280px) {
+    .profile-card {
+        max-width: 14.5rem;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    main {
+        background-position: right 5vw bottom 40vw, left 60vw top 40vw;
+    }
+
     .profile-card {
         max-width: 19.2rem;
         width: 19.2rem;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 420px) {
+    main {
+        background-color: var(--main-bg);
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-position: right 50vw bottom 80vw, left 45vw top 80vw;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
+
+@media screen and (min-width: 765px) and (max-width: 920px) {
+    main {
+        background-color: var(--main-bg);
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-position: right 52vw bottom 59vw, left 45vw top 75vw;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    main {
+        background-color: var(--main-bg);
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-position: right 50vw bottom 19vw, left 48vw top 24vw;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        background-color: var(--main-bg);
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-position: right 50vw bottom 20vw, left 48vw top 30vw;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 600px) {
+    main {
+        background-color: var(--main-bg);
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-position: right 50vw bottom 47vw, left 50vw top 60vw;
+        background-repeat: no-repeat, no-repeat;
     }
 }
